@@ -1,0 +1,45 @@
+/*
+ * @Description:
+ * @Autor: 吕殿朝
+ * @Date: 2020-03-30 22:32:47
+ * @LastEditors: 吕殿朝
+ * @LastEditTime: 2020-03-30 23:06:04
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.circle {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 8px;
+  transform: scale(1);
+  transition: transform 0.3s linear;
+}
+
+.circle.grow {
+  transform: scale(2);
+}
