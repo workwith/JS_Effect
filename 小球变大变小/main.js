@@ -3,7 +3,7 @@
  * @Autor: 吕殿朝
  * @Date: 2020-03-30 22:32:36
  * @LastEditors: 吕殿朝
- * @LastEditTime: 2020-03-30 23:23:42
+ * @LastEditTime: 2020-04-19 22:03:45
  */
 const container = document.getElementById("container");
 const circlesArr = [];
@@ -24,7 +24,7 @@ for (let i = 0; i < cols; i++) {
 
 circlesArr.forEach((cols, i) => {
   cols.forEach((circle, j) => {
-    circle.addEventListener("mouseente", () => {
+    circle.addEventListener("click", () => {
       growCircles(i, j);
     });
   });
